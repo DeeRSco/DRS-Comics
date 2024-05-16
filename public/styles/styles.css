@@ -1,0 +1,788 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --teal: #006b6b;
+    --light-teal: #009e9e;
+    --yellow: #fccf14;
+    --blue: #063c5e;
+    --grey: #c2c2c2;
+    --white: #ffffff;
+}
+
+
+body {
+    width: 100%;
+    /* max-width: 100vw; */
+    margin: 0;
+    overflow-x: hidden; 
+    font-size: 1.40rem;
+    background: var(--teal);
+    background: linear-gradient(0deg, var(--teal) 30%, var(--white) 100%);
+    
+}
+
+
+
+/* ---------------------------- Navigation Bar Styling --------------------------- */
+
+.header {
+    background-color: var(--blue);
+    /* width: 300 px;
+    height: 150px; */
+    font-family: 'Fredericka the Great', serif;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.header img {
+    width: 425px;
+    /* padding-left: 10px; */
+    /* height: auto; */
+}
+
+.header p {
+    display:inline-block;
+    /* margin-left: 80px; */
+    padding-right: 40px;
+    color: white;
+    
+}
+
+.header a:link {
+    text-decoration: none;
+}
+
+.header a:hover {
+    color: var(--yellow);
+    font-weight: bold;
+}
+
+.header a:active {
+    font-weight: bold;
+    color: var(--blue);
+    background-color: var(--yellow);
+}
+
+.header-logo img {
+    max-width: 30%;
+}
+
+nav a {
+    color: var(--white);
+}
+
+
+
+
+/* -------------------------- GENERAL PAGE STYLING ----------------------------- */
+
+.white-bg-bb {
+    /* width: 800px; */
+    width: 90%;
+    margin: 45px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 35px;
+    background-color: var(--white);
+    border-width: 5px;
+    border-color: var(--blue);
+    border-style: solid;
+    font-family: 'Open Sans', sans-serif;
+}  
+
+h1, h2 {
+    color: var(--blue);
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Fredericka the Great', serif;
+}
+
+
+/* -------------------------- INDEX PAGE STYLING ----------------------------- */
+
+.index-page {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 3;
+    flex-basis: 100%;
+
+}
+
+.index-page a:link,
+.index-page a:visited {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.index-page a:hover {
+    color: var(--teal);
+    font-weight: bold;
+}
+
+.index-page a:active {
+    color: var(--blue);
+    font-weight: bold;
+    background-color: var(--yellow);
+}
+
+.index-page-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink:3;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+}
+
+.index-card-display {
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    /* grid-template-columns: 300px 300px 300px 300px; */
+    grid-template-rows: auto auto auto;
+    /* grid-template-rows: 450px 450px 450px; */
+    margin-bottom: 50px;
+    
+}
+
+.index-cards {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 300px;
+    height: 441px; */
+    text-align: center;
+    flex-shrink:3;
+    flex-basis: 100%;
+    justify-content: center;
+
+}
+
+
+.index-cards img {
+    max-width: 20vh;
+    height: auto;
+}
+
+/* -------------------------- ABOUT PAGE STYLING ----------------------------- */
+
+.about-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-bottom ul {
+    display: block;
+    text-align: left;
+    margin-left: 40px;
+    /* padding: 0; */
+        
+}
+
+
+
+/* -------------------------- LOGIN PAGE STYLING ----------------------------- */
+.login-page {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    padding: 2px;
+    margin: auto;
+    
+}
+
+.login-form {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.login-form form {
+    width: 100%;
+}
+
+.login-inputs {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.login-email {
+    display: flex;
+    /* flex-wrap: nowrap;
+    margin-left: auto;
+    margin-right: auto; */
+    margin-bottom: 20px;
+
+}
+
+.login-password {
+    display: flex;
+    /* flex-wrap: nowrap; */
+}
+
+.login-email label,
+.login-password label {
+    display: flex;
+    flex-wrap: wrap;
+    width: 170px;
+    justify-content: flex-end;
+    padding-right: 5px;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.login-email input,
+.login-password input {
+    display: flex;
+    justify-content:flex-start;
+    width: 280px;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+/* -------------------------- UPDATE PAGE STYLING ----------------------------- */
+
+.update-page {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    /* display: block; */
+    padding: 10px;
+    margin: auto;
+}
+
+
+.update-form {
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: center;
+    margin: auto;
+    /* width:80%; */
+            
+}
+
+
+.update-form-inputs {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items:flex-end;
+    /* width: 300px; */
+    flex-shrink: 2;
+    flex-grow: 2;
+}
+
+
+.update-form div {
+    display: flex;
+    
+}
+
+.update-category {
+    margin-top: 30px;
+}
+
+.update-form label {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 50px; */
+    /* align-items:flex-end */
+    justify-content: flex-end;
+    flex-shrink: 1;
+    flex-grow: 1;
+    /* flex-basis: 50%; */
+    padding-right: 5px;
+}
+
+.update-form-inputs input,
+.update-form-inputs select, 
+.update-form-inputs textarea {
+    display: flex;
+    justify-content:flex-start;
+    width: 250px;
+}
+
+.update-form textarea  {
+    height: 150px;
+}
+
+
+
+/*  ---------------------------- CREATE PAGE STYLING --------------------------- */
+
+
+.create-page {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    /* display: block; */
+    padding: 10px;
+    margin: auto;
+}
+
+
+
+.create-form {
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: center;
+    margin: auto;
+    /* max-width:80%; */
+    /* width: 100%; */
+}
+
+.create-form form {
+    max-width: 900px;
+}
+
+
+.create-form-inputs {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* align-items:flex-end; */
+    /* width: 300px; */
+    max-width: 900px;
+    flex-grow: 2;
+    flex-shrink: 2;
+}
+
+
+.create-form div {
+    display: flex;
+    /* flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 80%;
+    max-width: 600px; */
+}
+
+.create-form-inputs input,
+.create-form-inputs select,
+.create-form-inputs textarea,
+.create-form-inputs number {
+    /* display: flex;
+    justify-content:flex-start;
+    width: 362px; */
+    /* flex-grow: 1; */
+}
+
+
+.create-category {
+    margin-top: 30px;
+    /* display: flex;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 80%;
+    max-width: 600px; */
+}
+
+
+.create-category label {
+    display: flex;
+    flex-wrap: nowrap;
+    /* max-width: 210px; */
+    justify-content: flex-end;
+    /* flex: 1 0 250px; */
+    flex-grow: 1;
+    flex-shrink: 1;
+    /* flex-basis: 100px;
+    max-width: 275px; */
+    padding-right: 5px;
+    
+}
+
+.create-category select {
+    /* padding: 0px;
+    text-indent: 0px;
+    max-width: 230px; */
+}
+
+.create-category input,
+.create-category select,
+.create-category textarea,
+.create-category number {
+    display: flex;
+    justify-content:flex-start;
+    /* max-width: 700px; */
+    /* flex-grow: 1; */
+    /* flex: 1 0 230px; */
+    /* flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 230px;
+    max-width: 600px; */
+    width: 400px;
+}
+
+
+.create-form textarea {
+    height: 150px;
+}
+
+
+
+
+/*  ---------------------------- BUTTON STYLING --------------------------- */
+.blue-button {
+    background-color: var(--blue);
+    color: var(--white);
+    width: 60px;
+    text-transform: uppercase;
+}
+
+.yellow-button,
+.display-more-button {
+    background-color: var(--yellow);
+    text-transform: uppercase;
+    min-width: 75px;
+    max-width: fit-content;
+    align-items: center;
+    padding: 4px;
+    justify-content: center;
+    
+}
+
+.submit-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background-color: var(--yellow);
+    /* text-transform: uppercase; */
+    min-width: 75px;
+    max-width: fit-content;
+    align-items: center;
+    padding: 2px;
+    justify-content: center;
+}
+
+.delete-button {
+    display: block;
+    margin: auto;
+    background-color: var(--yellow);
+    text-transform: uppercase;
+}
+
+.edit-button {
+    display: block;
+    margin: auto;
+    background-color: var(--blue);
+    color: var(--white);
+    text-transform: uppercase;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* -------------------------- ADMIN PAGE STYLING ----------------------------- */
+.admin-page {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.admin-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    /* flex-wrap: nowrap; */
+    white-space:nowrap;
+}
+
+
+    
+/* ------------------------- ADMIN PAGE - TABLE STYLING---------------------- */
+table, th, td {
+    border: 1px black solid;
+    border-collapse: collapse;
+    
+}
+
+table {
+    /* margin-top: 30px; */
+   }
+
+td {
+    /* height: 20px; */
+    vertical-align: center;
+    /* text-align: center; */
+    padding: 5px;
+}
+
+th {
+    background-color:#c2c2c2;
+    padding: 12px;
+}
+
+
+tr:nth-child(even) {background-color:#c2c2c2}
+
+
+
+/* ---------------------------------- CREATE PAGE STYLING ------------------------------------- */
+
+.create-form {
+    /* display: block;
+    text-align: center; */
+    display: flex;
+    margin-bottom: 0.5em;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-entry {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.new-entry input {
+    /* display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right; */
+    flex-grow: 2;
+    flex-basis: 230px;
+}
+
+.new-entry label {
+    flex-grow: 1;
+    flex-basis: 100px;
+
+}
+
+/* -------------------------------- Comic Card Styling ----------------------------- */
+.comic-card {
+    margin: 10vh auto;
+    width: 60%;
+    /* max-width: 600px; */
+    border-radius: 40px 40px 25px 25px;
+    border: var(--yellow) 4px solid;
+    background-color: var(--blue); 
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+
+.card-top {
+    /* height: 650px; */
+    background-color: var(--blue);
+    border-radius: 20px 20px 0 0;
+    color: var(--yellow);
+    margin-bottom: 45px;
+    }
+
+    .card-top h2 {
+        color: var(--yellow);
+    }
+
+.card-title {
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.card-book-cover {
+    max-width: 400px;
+    height: 575px;
+    background-image: url("../images/parable-of-the-sower.jpg");
+    background-position: center center;
+    background-size: cover;
+    border: var(--white) 2px solid;
+    border-radius: 30px;
+    margin: 20px auto; 
+}
+
+.card-book-cover img {
+    width: 100%;
+    
+}
+
+
+.card-bottom {
+    background-color: var(--white);
+    border-top: var(--yellow) 4px solid;
+    padding: 15px 30px 10px 30px;
+    border-radius: 0 0 20px 20px;
+}
+
+.first-word {
+    color: var(--blue);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.card-info-title {
+    font-style: italic;
+}
+
+
+/* --------------------------- Footer Styling ---------------------------- */
+.footer {
+    background-color: var(--blue);
+    width: 300 px;
+    /* height: 215px; */
+    border-width: 5px;
+    color: var(--white);
+    border-top: var(--yellow) 5px solid;
+    margin-top: 18px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap:wrap;
+    font-family: 'Fredericka the Great', serif;
+    
+}
+
+.footer h3 {
+    text-transform: uppercase;
+    color: var(--yellow);
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-social-icons {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+footer a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--yellow);
+    font-weight: bold;
+}
+
+footer a:active {
+    font-weight: bold;
+    color: var(--blue);
+    background-color: var(--yellow);
+}
+
+
+.footer-logo img {
+    width: 150px;
+}
+
+/* ---------------------------------------MEDIA QUERY SIZING -------------------------------------- */
+
+/* ---------------------------------------MEDIA QUERY SIZING - TABLET AND MOBILE ----------------------------------- */
+@media screen and (max-width: 768px) {
+    .body {
+        font-size: 1rem;
+    }
+    
+    .header-links {
+        display: none;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .comic-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .create-page {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .create-form form {
+        width: 100%;
+    }
+
+    .create-form-inputs {
+        max-width: 700px;
+    }
+
+    .create-category {
+        margin-top: 20px;
+    }
+
+    .create-category input,
+    .create-category select,
+    .create-category textarea,
+    .create-category number {
+        max-width: 300px;
+    }
+}
+
+
+/* ---------------------------------------MEDIA QUERY SIZING - DESKTOP ONLY -------------------------------------- */
+@media screen and (min-width: 768px) {
+    .nav-icon {
+        display: none;
+    }
+}
+
+
+/* ---------------------------------------MEDIA QUERY SIZING - SCREENS 1024+ -------------------------------------- */
+@media screen and (min-width: 1024px) {
+    .comic-card {
+        display: flex;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto; 
+        border-radius: 37px;   
+    }
+
+    .card-top {
+        /* width: 80%; */
+        border: none;
+        border-radius: 35px 0 0 35px;
+        width: 40%;
+    }
+
+    .card-book-cover {
+        margin-left:auto;
+        margin-right: auto;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 50px;
+        
+    }
+
+    .card-book-cover img {
+        width: 100%;
+
+    }
+
+    .card-bottom {
+        width: 1000px;
+        border: none;
+        border-radius: 0 33px 33px 0;
+    }
+}
