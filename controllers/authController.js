@@ -1,6 +1,21 @@
 const passport = require("passport");
 const bcrypt = require("bcrypt");
 
+//noticed on 5-19-24 that login & localLogin functions were missing; added below
+const login = (request, response, next) => {
+    response.status(200).json({
+        success: {message: "You've logged in"},
+        statusCode: 200
+    })
+};
+
+const localLogin = (request, response, next) => {
+    response.status(200).json({
+        success:{message: "You're now logged in"},
+        statusCode: 200
+    })
+};
+
 const loginLocalFailed = (request, response, next) => {
     response.status(401).json({error: {message: "Username or password is incorrect"}, statusCode: 401})
 };
@@ -43,4 +58,4 @@ const signupRequest = (request, response, next) => {
     })
 };
 
-module.exports = {loginLocalFailed, logoutRequest, signupRequest}
+module.exports = {login, localLogin, loginLocalFailed, logoutRequest, signupRequest}
